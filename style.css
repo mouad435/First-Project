@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Bungee Spice", sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    margin: 0 7rem;
+    height: 100%;
+}
+#home {
+    background-color: #000;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav .logo {
+    width: 50px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul a {
+    color: #fff;
+    padding: 15px;
+}
+nav ul a:hover {
+    border-bottom: 1px solid #fff;
+}
+#home .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -20px;
+    height: 80%;
+}
+#home .content img {
+    width: 500px;
+    animation: animation1 1s ease-out;
+}
+#home .content .content-text h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+
+}
+#home .content .content-text p {
+    font-family: "Science Gothic", sans-serif;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.btn {
+    color: #fff;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.social {
+    margin-left: 0 3rem;
+    animation: animation1 1s ease-out;
+}
+.social i {
+    color: rgb(255, 149, 0);
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+#home .bottles {
+    width: 120px;
+    display: block;
+    margin: auto;
+    animation: animation2 1s ease-out;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .container {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        margin: 0 1rem;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav .logo {
+        width: 40px;
+        display: block;
+        margin: 0 auto 25px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav ul a {
+        padding: 10px;
+    }
+    #home .content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 25px;
+    }
+    #home .content .content-text h1 {
+        font-size: 35px;
+    }
+    #home .content .content-text p {
+        font-size: 13px;
+    }
+    #home .content img {
+        width: 250px;
+        position: relative;
+        left: 25px;
+    }
+    .social {
+        position: relative;
+        top: -70px;
+    }
+    .social i {
+        font-size: 20px;
+    }
+    #home .bottles {
+        width: 90px;
+        position: relative;
+        top: -40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    nav ul a {
+        font-size: 10px;
+        padding: 12px;
+    }
+    #home .content .content-text h1 {
+        font-size: 30px;
+    }
+    #home .content .content-text p {
+        font-size: 10px;
+    }
+    #home .content img {
+        position: relative;
+        top: -25px;
+        left: 14px;
+        width: 150px;
+    }
+    .social {
+        top: -75px;
+    }
+    .social i {
+        font-size: 12px;
+    }
+    #home .bottles {
+        width: 40px;
+        top: -35px;
+    }
+    .btn {
+        font-size: 8px;
+    }
+}
+
